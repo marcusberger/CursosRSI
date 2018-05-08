@@ -1,17 +1,24 @@
 <meta charset="utf-8">
-<script>
+
+<script>	
+
 	function pulaLinha(){
+		document.write("<br>");
+		document.write("<hr>");
 		document.write("<br>");
 	}
 
 	function print(mensagem){
-		document.write(mensagem);
+		document.write("<big>" + mensagem + "</big>");
 		pulaLinha();
 	}
 
-	var ano 2018;
+	var ano = 2018;
 
-	document.write("dedededed");
+	print("Eu nasci em: " + (ano - 25));
+	print("Matheus nasceu em: " + (ano-24));
+	print("Bruno nasceu em: " + (ano-32));
+
 
 	
 </script>
