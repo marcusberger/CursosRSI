@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Puzzle!</title>
+
+		<script>
+			function pulaLinha(){
+				document.write("<br>");
+			}
+
+			function print(mensagem){
+				document.write(mensagem);
+				pulaLinha();
+			}
+
+			var randonNumber = Math.round(Math.random() * 10);
+			console.log(randonNumber);
+
+			var guess = parseInt(prompt("Type your guess"));
+
+			if(randonNumber == guess){
+				print("<h1>Your Winner!</h1>");
+			} else {
+				print("<h1>Your Loser!</h1>");
+			}
+
+		</script>
+
+	</head>
+
+<body>
+
+</body>
+
+</html>
+ 	

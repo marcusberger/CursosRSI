@@ -10,11 +10,10 @@
 	}
 
 	function calculaImc(peso, altura){
-		
-		Math.round(peso / (altura*altura));
 
-		return Math.round(peso / (altura*altura));
+		return (peso / (altura*altura));
 	}
+
 
 	var nome = prompt("Informe seu nome");
 	var peso = prompt(nome + ", Informe seu peso");
@@ -23,5 +22,16 @@
 	var imc = calculaImc(peso, altura);
 
 	print(nome + ", seu IMC é: " + imc);
+
+	if(imc < 18.5){
+		print("você está abaixo do peso");
+	}
+	if(imc >= 18.5 && imc <= 35){
+		print("Seu peso está na média");
+			}
+	if(imc > 35){
+		print("você está acima do peso");
+	} 	
+
 
 </script>
