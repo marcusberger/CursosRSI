@@ -3,6 +3,10 @@ package byteBank;
 class Conta{
     private String titular;
     private double saldo;
+    
+    Conta conta = new Conta();
+    conta.setTitular("Fábio")
+    conta.setSaldo(100.0);
 
     public void setTitular(String titular){
         this.titular = titular;
